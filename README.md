@@ -21,6 +21,26 @@ To mitigate these risks, we strongly recommend taking immediate action:
 Upgrade to a supported Log4j 2.x version: This is the most effective long-term solution and should be prioritized.
 Apply temporary mitigations: While upgrading, consider temporary measures like log4j-filters or patching vulnerable configurations to reduce immediate exposure.
 Develop a comprehensive patching strategy: Implement a process for regularly identifying and updating vulnerable software components, including Log4j.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attackers can exploit vulnerabilities in unsupported Log4j versions to inject malicious code into applications. This code can then execute with the same privileges as the application itself, granting attackers complete control over systems
+
+
+
+Certain exploits allow attackers to exfiltrate sensitive data directly from logs. In a scenario where applications using unsupported Log4j generate logs containing confidential information (e.g., usernames, passwords, financial details), attackers can leverage the vulnerabilities to extract this data
 Raise awareness: Educate developers and IT personnel about the risks of unsupported Log4j versions and best practices for secure logging.
 5. Conclusion
 
